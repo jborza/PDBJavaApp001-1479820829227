@@ -1,0 +1,11 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: PDBJavaApp001
+  host: PDBJavaApp001
+  disk_quota: 1024M
+  services:
+  - PDBJavaApp001-cloudantNoSQLDB
+  - availability-monitoring-auto
